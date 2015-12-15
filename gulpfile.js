@@ -9,7 +9,7 @@ var plug = require('gulp-load-plugins')();
 
 var paths = {
     js: './toastr.js',
-    less: './toastr.less',
+    sass: './toastr.scss',
     report: './report',
     build: './build'
 };
@@ -66,8 +66,8 @@ gulp.task('js', function() {
 gulp.task('css', function() {
     log('Bundling, minifying, and copying the app\'s CSS');
 
-    return gulp.src(paths.less)
-        .pipe(plug.less())
+    return gulp.src(paths.sass)
+        .pipe(plug.sass())
 //        .pipe(plug.autoprefixer('last 2 version', '> 5%'))
         .pipe(gulp.dest(paths.build))
         .pipe(plug.bytediff.start())
