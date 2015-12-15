@@ -159,11 +159,11 @@
                     containerId: 'toast-container',
                     debug: false,
 
-                    showMethod: 'fadeIn', //fadeIn, slideDown, and show are built into jQuery
+                    showMethod: 'slideDown', //fadeIn, slideDown, and show are built into jQuery
                     showDuration: 300,
                     showEasing: 'swing', //swing and linear are built into jQuery
                     onShown: undefined,
-                    hideMethod: 'fadeOut',
+                    hideMethod: 'slideUp',
                     hideDuration: 1000,
                     hideEasing: 'swing',
                     onHidden: undefined,
